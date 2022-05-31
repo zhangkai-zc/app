@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+.header {
+    height: 25rem;
+    box-sizing: border-box;
+    background: url(../image/my/bg1.png) no-repeat;
+    background-size: 120%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+
+
+    a {
+        color: white;
+        font-size: 1.4rem;
+    }
+
+    .mytop {
+        display: flex;
+        flex: 1;
+        justify-content: flex-end;
+
+        a {
+            display: flex;
+            flex-direction: column;
+            padding: 0 1.5rem;
+            align-items: center;
+            justify-content: space-between;
+
+            img {
+                width: 70%;
+            }
+        }
+    }
+
+    .myimg {
+        flex: 4;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 20%;
+        }
+
+        a {
+            margin-top: 1.5rem;
+            padding: .7rem 3rem;
+            border: 1px solid white
+        }
+    }
+}
+
+.content {
+    background-color: #fff;
+    margin-top: 1rem;
+    padding: 0 1.5rem;
+
+    .mylist {
+        display: flex;
+        flex-direction: column;
+
+        a {
+            font-size: 1.5rem;
+            height: 6rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: .1rem solid gray;
+
+            span:nth-of-type(1) {
+                padding-left: 3rem;
+                background: url(../image/my/icon1.png) no-repeat .5rem 0;
+                background-size: 2rem;
+            }
+
+            span:nth-of-type(2) {
+                width: 2rem;
+                height: 2rem;
+                background-color: red;
+                background: url(../image/my/right.png) no-repeat 0px 0px;
+                background-size: 1rem;
+            }
+        }
+
+        a:nth-of-type(2) {
+            span:nth-of-type(1) {
+                background: url(../image/my/icon2.png) no-repeat .5rem 0;
+                background-size: 2rem;
+            }
+        }
+
+        a:nth-of-type(3) {
+            span:nth-of-type(1) {
+                background: url(../image/my/icon3.png) no-repeat .5rem 0;
+                background-size: 2rem;
+            }
+        }
+
+        a:nth-of-type(4) {
+            span:nth-of-type(1) {
+                background: url(../image/my/icon4.png) no-repeat .5rem 0;
+                background-size: 2rem;
+            }
+        }
+    }
+}
