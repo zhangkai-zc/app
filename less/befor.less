@@ -1,0 +1,83 @@
+body {
+    background-color: #F5F5F5;
+    height: 66.7rem;
+}
+
+// 导航
+.nav {
+    padding: 1.5rem 2rem;
+    border-bottom: .1rem solid gray;
+    background-color: #fff;
+
+    p {
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+.header {
+    height: 17rem;
+    background: url(../image/my/bg1.png) no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+
+    a {
+        color: white;
+        font-size: 1.4rem;
+    }
+
+    .myimg {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 17%;
+        }
+
+        a {
+            margin-top: 3rem;
+            color: rgb(249, 245, 245);
+        }
+    }
+}
+
+.content {
+    background-color: #fff;
+    margin-top: 1rem;
+    padding: 0 1.5rem;
+    border-bottom: .1rem solid gray;
+
+    .mylist {
+        display: flex;
+        flex-direction: column;
+
+        a {
+            font-size: 1.5rem;
+            height: 6rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: .1rem solid gray;
+
+            span:nth-of-type(2) {
+                width: 2rem;
+                height: 2rem;
+                background-color: red;
+                background: url(../image/my/right.png) no-repeat 0px 0px;
+                background-size: 1rem;
+            }
+        }
+
+        a:nth-of-type(3) {
+            border: none;
+        }
+    }
+}
