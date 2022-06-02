@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./less/reset.css">
+    <link rel="stylesheet" href="./less/RentalList.css">
+    <script src="./js/setRem.js"></script>
+</head>
+<body>
+     <div class="body_">
+         
+      <ul class="head">
+        <li><img src="./image/index/my.jpg" alt=""></li>
+        <li><img src="./image/index/xiazai.jpg" alt=""></li>
+    </ul>
+    <div class="top">
+        <p>首页>北京租房</p>
+        <p><input type="text">
+        <span></span>
+        <span><img src="./image/SecondHandList/search_03.png" alt=""></span>
+        </p>
+    </div>
+    <ul class="ComboBox">
+        <li id="click1" >区域<p ></p></li>
+        <li  id="click2">月租<p ></p></li>
+        <li  id="click3">房型<p ></p></li>
+        <li  id="click4">更多<p ></p></li>
+    </ul>
+    <div class="introduce"><img src="./image/SecondHandList/img1.png" alt="">
+        <ul>
+            <li>南沙滩小区&nbsp;超低价急售</li>
+            <li><span>2室1厅96m南北</span></li>
+            <li><span>青岛新天地</span></li>
+            <li><span>集中供暖</span><span>3700元/月</span></li>
+        </ul> 
+    </div>
+    <div class="introduce"><img src="./image/SecondHandList/img2.png" alt="">
+        <ul>
+            <li>青年汇二期&nbsp;免税三居</li>
+            <li><span>2室1厅96m南北</span></li>
+            <li><span>青年汇家园</span></li>
+            <li><span>集中供暖</span><span>3700元/月</span></li>
+        </ul> 
+    </div>
+    <div class="introduce"><img src="./image/SecondHandList/img3.png" alt="">
+        <ul>
+            <li>博雅德园稀缺两居&nbsp;钥匙房源</li>
+            <li><span>2室1厅96m南北</span></li>
+            <li><span>西二旗</span></li>
+            <li><span>集中供暖</span><span>3700元/月</span></li>
+        </ul> 
+    </div>
+    <div class="introduce"><img src="./image/SecondHandList/img4.png" alt="">
+        <ul>
+            <li>昭阳北路增车库自主首选</li>
+            <li><span>2室1厅96m南北</span></li>
+            <li><span>青岛新天地</span></li>
+            <li><span>天然气供暖</span><span>3700元/月</span></li>
+        </ul> 
+    </div>
+    <div class="introduce"><img src="./image/SecondHandList/img5.png" alt="">
+        <ul>
+            <li>南沙滩小区&nbsp;超低价急售</li>
+            <li><span>2室1厅96m南北</span></li>
+            <li><span>青岛新天地</span></li>
+            <li><span>集中供暖</span><span>3700元/月</span></li>
+        </ul> 
+    </div>
+    <div class="bottom">
+        <div>北京找房无忧>首选</div>
+        <div><p><span>iPhone</span><span>客户端</span></p><p><span>Android</span><span>客户端</span></p></div>
+        <div><span>北京找房无忧房产经纪公司</span><span>网络经营许可证ICP备20160812号</span></div>
+    </div>
+     </div>
+
+     <div class="Filter-box">
+        <ul class="ComboBox1">
+            <li>区域<p ></p></li>
+            <li >月租<p ></p></li>
+            <li  >房型<p ></p></li>
+            <li  >更多<p ></p></li>
+        </ul>
+        <ul class="ComboBox2">
+            <li>不限</li>
+            <li>1室</li>
+            <li>2室</li>
+            <li>3室</li>
+            <li>4室</li>
+            <li>5室</li>
+            <li>确定</li>
+        </ul>
+     </div>
+
+</body>
+</html>
+<script>
+    var click1=document.getElementById('click1');
+    var click2=document.getElementById('click2');
+    var click3=document.getElementById('click3');
+    var click4=document.getElementById('click4');
+    var Filter_box=document.getElementsByClassName('Filter-box')[0]
+   
+click3.ontouchstart=function(){
+    Filter_box.style.display= "block";
+}
+// touch.on(click3,'tap',function() {
+//     Filter_box.style.display= "block";
+// });
+// console.log(click3, Filter_box);
+// touch.on(Filter_box, 'tap', function() {
+//     Filter_box.style.display= "none";
+// });
+Filter_box.ontouchstart=function(event){
+    // Filter_box.style.display= "none";
+    if(event.target!=this){
+        return;
+    }
+    else{
+            Filter_box.style.display= "none";
+
+    }
+   
+
+}
+</script>
