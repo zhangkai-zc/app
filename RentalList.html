@@ -7,15 +7,19 @@
     <title>Document</title>
     <link rel="stylesheet" href="./less/reset.css">
     <link rel="stylesheet" href="./less/RentalList.css">
+    <link rel="stylesheet" href="./less/public.css">
     <script src="./js/setRem.js"></script>
 </head>
 <body>
-     <div class="body_">
+     <div >
          
-      <ul class="head">
-        <li><img src="./image/index/my.jpg" alt=""></li>
-        <li><img src="./image/index/xiazai.jpg" alt=""></li>
-    </ul>
+        <div class="head">
+            <a href="#"><img src="./image/index/logo.jpg" alt=""></a>
+            <div class="my_dow">
+                <a href="#"><span><img src="./image/my/urse.png" alt=""></span><span>我的</span></a>
+                <a href="#"><span><img src="./image/my/down.png" alt=""></span> APP<span></span></a>
+            </div>
+        </div>
     <div class="top">
         <p>首页>北京租房</p>
         <p><input type="text">
@@ -78,20 +82,51 @@
 
      <div class="Filter-box">
         <ul class="ComboBox1">
-            <li>区域<p ></p></li>
-            <li >月租<p ></p></li>
-            <li  >房型<p ></p></li>
-            <li  >更多<p ></p></li>
+            <li  id="click1" >区域<p ></p></li>
+            <li  id="click2" >月租<p ></p></li>
+            <li   id="click33" >房型<p ></p></li>
+            <li   id="click4" >更多<p ></p></li>
         </ul>
-        <ul class="ComboBox2">
-            <li>不限</li>
-            <li>1室</li>
-            <li>2室</li>
-            <li>3室</li>
-            <li>4室</li>
-            <li>5室</li>
+        <ul class="ComboBox-2">
+            <li >不限</li>
+            <li>1室<p></p></li>
+            <li>2室 <p> <img src="./image/SecondHandList/ok.png" alt=""></p></li>
+            <li>3室 <p></p></li>
+            <li>4室 <p></p></li>
+            <li>5室<p></p></li>
             <li>确定</li>
         </ul>
+     </div>
+     <div class="Filter-box1">
+        
+        <ul class="ComboBox2">
+            <li  id="click11" >区域<p ></p></li>
+            <li  id="click2" >月租<p ></p></li>
+            <li   id="click3" >房型<p ></p></li>
+            <li   id="click4" >更多<p ></p></li>
+        </ul>
+        <div>
+           <div class="metro">
+            <p>区域</p>
+            <p>地铁</p>
+           </div>
+            <ul><li>河南</li>
+            <li>河南</li>
+            <li>河南</li>
+            <li>河南</li>
+            <li><a>河南</a></li>
+            <li>河南</li>
+            <li>河南</li>
+            <li>河南</li>
+            <li><a>河南</a></li>
+            <li>河南</li>
+            <li>河南</li>
+            <li>河南</li>
+            <li>河南</li>
+            <li>河南</li>
+               
+            </ul>
+        </div>
      </div>
 
 </body>
@@ -101,28 +136,46 @@
     var click2=document.getElementById('click2');
     var click3=document.getElementById('click3');
     var click4=document.getElementById('click4');
+    var click44=document.getElementById('click44');
+    var click33=document.getElementById('click33');
+    var click22=document.getElementById('click22');
+    var click11=document.getElementById('click11');
     var Filter_box=document.getElementsByClassName('Filter-box')[0]
+    var Filter_box1=document.getElementsByClassName('Filter-box1')[0]
    
+
+click1.ontouchstart=function(){
+    Filter_box1.style.display= "block";
+    Filter_box.style1.display= "none";
+}
+click11.ontouchstart=function(){
+      Filter_box1.style.display= "none";
+      Filter_box.style1.display= "none";
+}
 click3.ontouchstart=function(){
     Filter_box.style.display= "block";
+    Filter_box.style1.display= "none";
 }
-// touch.on(click3,'tap',function() {
-//     Filter_box.style.display= "block";
-// });
-// console.log(click3, Filter_box);
-// touch.on(Filter_box, 'tap', function() {
-//     Filter_box.style.display= "none";
-// });
-Filter_box.ontouchstart=function(event){
-    // Filter_box.style.display= "none";
-    if(event.target!=this){
-        return;
-    }
-    else{
-            Filter_box.style.display= "none";
+click33.ontouchstart=function(){
+      Filter_box.style.display= "none";
+      Filter_box.style1.display= "none";
+}
 
-    }
+// Filter_box.ontouchstart=function(event){
+//     // Filter_box.style.display= "none";
+//     if(event.target!=this){
+//         return;
+//     }
+//     else{
+//             Filter_box.style.display= "none";
+
+//     }
    
 
-}
+// }
+</script>
+<script src="./js/public.js"></script>
+<script src="./js/touch.min.js"></script>
+<script>
+     headjl()
 </script>
