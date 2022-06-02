@@ -1,0 +1,357 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.top {
+  width: 100%;
+  height: 12rem;
+}
+.top p:nth-of-type(1) {
+  width: 100%;
+  height: 30%;
+  line-height: 3.6rem;
+  border: 0.1rem solid #7a7979;
+  border-bottom: none;
+  font-size: 1.5rem;
+}
+.top p:nth-of-type(2) {
+  position: relative;
+  width: 100%;
+  height: 70%;
+  border: 0.1rem solid #7a7979;
+  text-align: center;
+  line-height: 8.4rem;
+  background-color: #F5F5F5;
+}
+.top p:nth-of-type(2) input {
+  width: 85%;
+  height: 3rem;
+  border-radius: 0.5rem;
+}
+.top p:nth-of-type(2) span:nth-of-type(1) {
+  width: 0.2rem;
+  height: 2rem;
+  position: absolute;
+  right: 9rem;
+  top: 3.5rem;
+  background-color: #18ca53;
+}
+.top p:nth-of-type(2) span:nth-of-type(2) {
+  width: 3rem;
+  height: 2.8rem;
+  position: absolute;
+  right: 4rem;
+  top: 1rem;
+}
+.top p:nth-of-type(2) span:nth-of-type(2) img {
+  width: 100%;
+  height: 100%;
+}
+.ComboBox {
+  width: 95%;
+  height: 5rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+.ComboBox li {
+  width: 23%;
+  height: 100%;
+  color: #303232;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  line-height: 4rem;
+  position: relative;
+}
+.ComboBox li p {
+  position: absolute;
+  top: 1.8rem;
+  right: 0;
+  width: 0px;
+  height: 0px;
+  border-top: 0.5rem solid #4a4948;
+  border-bottom: 0.5rem solid #FFFFFF;
+  border-left: 0.5rem solid #FFFFFF;
+  border-right: 0.5rem solid #FFFFFF;
+}
+.introduce {
+  width: 95%;
+  height: 17rem;
+  display: flex;
+  margin: 0 auto;
+  border-bottom: 0.1rem solid #FF8A00;
+  align-items: center;
+  justify-content: space-around;
+}
+.introduce img {
+  width: 10rem;
+  height: 10rem;
+}
+.introduce ul {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.introduce ul li {
+  width: 100%;
+  height: 23%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.introduce ul > li:nth-of-type(1) {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.introduce ul > li:nth-of-type(4) {
+  display: flex;
+  justify-content: space-between;
+}
+.introduce ul > li:nth-of-type(4) span:nth-of-type(1) {
+  border: 0.1rem solid #18c74f;
+  color: #18c74f;
+}
+.introduce ul > li:nth-of-type(4) span:nth-of-type(2) {
+  color: #FF8A00;
+  font-weight: 600;
+}
+.introduce:nth-of-type(3) {
+  margin-bottom: 1rem;
+}
+.bottom {
+  width: 100%;
+  height: 20rem;
+  background-color: #2F3130;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.bottom > div:nth-of-type(1) {
+  width: 95%;
+  height: 20%;
+  color: #c4c2c2;
+  font-size: 1.6rem;
+  padding-top: 1rem;
+  border-bottom: 0.1rem solid #c4c2c2;
+}
+.bottom > div:nth-of-type(2) {
+  width: 95%;
+  height: 40%;
+  display: flex;
+}
+.bottom > div:nth-of-type(2) p {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.bottom > div:nth-of-type(2) p span {
+  width: 100%;
+  font-size: 1.6rem;
+  color: #c4c2c2;
+  text-align: right;
+  padding-right: 3rem;
+}
+.bottom > div:nth-of-type(2) p:nth-of-type(1) {
+  background: url(../image/index/apple.png) no-repeat 4.5rem 1.7rem;
+}
+.bottom > div:nth-of-type(2) p:nth-of-type(2) {
+  background: url(../image/index/android.png) no-repeat 4.5rem 1.7rem;
+}
+.bottom > div:nth-of-type(3) {
+  width: 95%;
+  height: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+.bottom > div:nth-of-type(3) span {
+  width: 80%;
+  text-align: center;
+  font-size: 1.6rem;
+  color: #c4c2c2;
+}
+.Filter-box {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 37.5rem;
+  height: 66.7rem;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.ComboBox1 {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  background-color: #FFFFFF;
+  justify-content: space-evenly;
+}
+.ComboBox1 li {
+  width: 23%;
+  height: 100%;
+  color: #303232;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  line-height: 4rem;
+  position: relative;
+}
+.ComboBox1 li p {
+  position: absolute;
+  top: 1.8rem;
+  right: 0;
+  width: 0px;
+  height: 0px;
+  border-top: 0.5rem solid #747070;
+  border-bottom: 0.5rem solid rgba(0, 0, 0, 0);
+  border-left: 0.5rem solid rgba(0, 0, 0, 0);
+  border-right: 0.5rem solid rgba(0, 0, 0, 0);
+}
+.ComboBox1 li:nth-of-type(3) {
+  color: #e97a0c;
+}
+.ComboBox1 li:nth-of-type(3) p {
+  position: absolute;
+  top: 1.4rem;
+  right: 0;
+  border-top: 0.5rem solid rgba(0, 0, 0, 0);
+  border-bottom: 0.5rem solid #e56904;
+  border-left: 0.5rem solid rgba(0, 0, 0, 0);
+  border-right: 0.5rem solid rgba(0, 0, 0, 0);
+}
+.ComboBox-2 {
+  width: 100%;
+  height: 37rem;
+  background-color: #FFFFFF;
+}
+.ComboBox-2 li {
+  text-indent: 1rem;
+  width: 100%;
+  height: 4.8rem;
+  line-height: 4.8rem;
+  border-bottom: 0.1rem solid #1e1c1c;
+  font-size: 1.6rem;
+}
+.ComboBox-2 li p {
+  width: 2rem;
+  height: 2rem;
+  border: 0.1rem solid #666464;
+  float: right;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+.ComboBox-2 li p img {
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+.ComboBox-2 li:nth-of-type(7) {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+  background-color: #e56904;
+  border-bottom: none;
+  text-align: center;
+  color: #F5F5F5;
+  font-size: 2rem;
+}
+.ComboBox2 {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  background-color: #FFFFFF;
+  justify-content: space-evenly;
+}
+.ComboBox2 li {
+  width: 23%;
+  height: 100%;
+  color: #303232;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  line-height: 4rem;
+  position: relative;
+}
+.ComboBox2 li p {
+  position: absolute;
+  top: 1.8rem;
+  right: 0;
+  width: 0px;
+  height: 0px;
+  border-top: 0.5rem solid #747070;
+  border-bottom: 0.5rem solid rgba(0, 0, 0, 0);
+  border-left: 0.5rem solid rgba(0, 0, 0, 0);
+  border-right: 0.5rem solid rgba(0, 0, 0, 0);
+}
+.ComboBox2 li:nth-of-type(1) {
+  color: #e97a0c;
+}
+.ComboBox2 li:nth-of-type(1) p {
+  position: absolute;
+  top: 1.4rem;
+  right: 0;
+  border-top: 0.5rem solid rgba(0, 0, 0, 0);
+  border-bottom: 0.5rem solid #e56904;
+  border-left: 0.5rem solid rgba(0, 0, 0, 0);
+  border-right: 0.5rem solid rgba(0, 0, 0, 0);
+}
+.Filter-box1 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 37.5rem;
+  height: 66.7rem;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.Filter-box1 > div {
+  width: 100%;
+  height: 45rem;
+  display: flex;
+  background-color: #ffffff;
+}
+.Filter-box1 > div .metro {
+  width: 70%;
+  height: 45rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.Filter-box1 > div .metro > p:nth-of-type(1) {
+  width: 51%;
+  height: 5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #e97a0c;
+  text-align: center;
+  line-height: 5rem;
+  border-right: 0.1rem solid #474747;
+}
+.Filter-box1 > div .metro > p:nth-of-type(2) {
+  width: 51%;
+  height: 40rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #272625;
+  text-align: center;
+  background-color: #F0F0F0;
+  border-right: 0.1rem solid #474747;
+}
+.Filter-box1 > div ul {
+  width: 76%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+}
+.Filter-box1 > div ul li {
+  width: 50%;
+  height: 12%;
+}
+.Filter-box1 > div ul li a {
+  color: #e56904;
+}
