@@ -1,0 +1,184 @@
+body {
+    background-color: #F5F5F5;
+    height: 66.7rem;
+}
+
+// 导航
+.nav {
+    padding: 1.5rem 2rem;
+    border-bottom: .1rem solid gray;
+    background-color: #fff;
+
+    p {
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+}
+
+// 登录切换
+.cut-btn {
+    background-color: #fff;
+    display: flex;
+    height: 6rem;
+    font-size: 1.6rem;
+
+    span {
+        text-align: center;
+        line-height: 6rem;
+    }
+
+    .btn-common {
+        flex: 1;
+        border-bottom: .4rem solid #FF8A00;
+    }
+
+    .btn-sortcut {
+        flex: 1;
+        border-bottom: .4rem solid gray;
+    }
+
+
+}
+
+// 输入框
+.con {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    div {
+        span {
+            display: block;
+            padding: .8rem 1rem;
+            border: .1rem solid gray;
+            position: absolute;
+            font-size: 1.4rem;
+            color: gray;
+            top: .7rem;
+            right: 2rem;
+        }
+    }
+
+
+    input {
+        height: 5rem;
+        font-size: 1.6rem;
+        width: 100%;
+        border: none;
+        outline: none;
+        border-bottom: .1rem solid gray;
+        text-indent: 1.5rem;
+    }
+
+    button {
+        display: block;
+        width: 93%;
+        margin: 2rem auto;
+        height: 5.5rem;
+        background-color: #FF8A00;
+        border: none;
+        outline: none;
+        color: white;
+        font-size: 2.2rem;
+    }
+}
+
+// 尾部
+.foot {
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+
+    a:nth-of-type(1) {
+        color: #FF8A00;
+    }
+}
+
+// 验证弹框
+.masking {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    .box {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        .alert {
+            width: 20rem;
+            height: 10rem;
+            border-radius: .5rem;
+            display: flex;
+            flex-direction: column;
+            font-size: 1.6rem;
+            overflow: hidden;
+            background-color: rgb(236, 232, 232);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+
+            span {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex: 2;
+                border-bottom: .1rem solid gray;
+
+            }
+
+            a {
+                padding: .5rem;
+                text-align: center;
+            }
+        }
+    }
+}
+
+// 短信弹框
+.ma_code {
+    position: absolute;
+    top: -12rem;
+    width: 100%;
+    height: 12rem;
+    background-color: rgb(189, 185, 185);
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .note_top {
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 6%;
+        }
+
+        span {
+            padding-left: 1rem;
+            font-size: 1.2rem;
+        }
+    }
+
+    .note_con {
+        color: rgb(90, 90, 90);
+    }
+
+    .note_foot {
+        display: flex;
+
+        span {
+            padding-right: 3rem;
+        }
+    }
+}

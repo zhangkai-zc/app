@@ -1,0 +1,148 @@
+body {
+  background-color: #F5F5F5;
+  height: 66.7rem;
+}
+.nav {
+  padding: 1.5rem 2rem;
+  border-bottom: 0.1rem solid gray;
+  background-color: #fff;
+}
+.nav p {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.cut-btn {
+  background-color: #fff;
+  display: flex;
+  height: 6rem;
+  font-size: 1.6rem;
+}
+.cut-btn span {
+  text-align: center;
+  line-height: 6rem;
+}
+.cut-btn .btn-common {
+  flex: 1;
+  border-bottom: 0.4rem solid #FF8A00;
+}
+.cut-btn .btn-sortcut {
+  flex: 1;
+  border-bottom: 0.4rem solid gray;
+}
+.con {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.con div span {
+  display: block;
+  padding: 0.8rem 1rem;
+  border: 0.1rem solid gray;
+  position: absolute;
+  font-size: 1.4rem;
+  color: gray;
+  top: 0.7rem;
+  right: 2rem;
+}
+.con input {
+  height: 5rem;
+  font-size: 1.6rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 0.1rem solid gray;
+  text-indent: 1.5rem;
+}
+.con button {
+  display: block;
+  width: 93%;
+  margin: 2rem auto;
+  height: 5.5rem;
+  background-color: #FF8A00;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 2.2rem;
+}
+.foot {
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+}
+.foot a:nth-of-type(1) {
+  color: #FF8A00;
+}
+.masking {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.masking .box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.masking .box .alert {
+  width: 20rem;
+  height: 10rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+  overflow: hidden;
+  background-color: #ece8e8;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.masking .box .alert span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 2;
+  border-bottom: 0.1rem solid gray;
+}
+.masking .box .alert a {
+  padding: 0.5rem;
+  text-align: center;
+}
+.ma_code {
+  position: absolute;
+  top: -12rem;
+  width: 100%;
+  height: 12rem;
+  background-color: #bdb9b9;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.ma_code .note_top {
+  display: flex;
+  align-items: center;
+}
+.ma_code .note_top img {
+  width: 6%;
+}
+.ma_code .note_top span {
+  padding-left: 1rem;
+  font-size: 1.2rem;
+}
+.ma_code .note_con {
+  color: #5a5a5a;
+}
+.ma_code .note_foot {
+  display: flex;
+}
+.ma_code .note_foot span {
+  padding-right: 3rem;
+}
