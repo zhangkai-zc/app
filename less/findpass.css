@@ -1,0 +1,21 @@
+.con input:nth-of-type(3) {
+  height: 5rem;
+  margin: 0;
+  font-size: 1.6rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 0.1rem solid gray;
+  background-color: white;
+  text-indent: 1.5rem;
+}
+.con input:nth-of-type(4) {
+  width: 93%;
+  margin: 2rem auto;
+  height: 5.5rem;
+  background-color: #FF8A00;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 2.2rem;
+}

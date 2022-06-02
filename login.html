@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="stylesheet" href="./less/public.css">
+    <link rel="stylesheet" href="./less/reset.css">
+    <link rel="stylesheet" href="./less/login.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="head">
+        <a href="#"><img src="./image/index/logo.jpg" alt=""></a>
+        <div class="my_dow">
+            <a href="#"><span><img src="./image/my/urse.png" alt=""></span><span>我的</span></a>
+            <a href="#"><span><img src="./image/my/down.png" alt=""></span> APP<span></span></a>
+        </div>
+    </div>
+
+    <!-- 导航 -->
+    <div class="nav">
+        <p><a href="#">首页</a>&nbsp;>&nbsp;<a href="#">我的</a>&nbsp;>&nbsp;<a href="#">登录</a></p>
+    </div>
+
+    <!-- 登录切换 -->
+    <div class="cut-btn">
+        <span class="btn-common">普通登录</span>
+        <span class="btn-sortcut">验证码快捷登录</span>
+    </div>
+
+    <!-- 登录信息输入框 -->
+    <div class="con">
+        <form action="./BeforLogin.html" class='form' name="form1" method="get">
+            <input type="text" class="phone" placeholder="请输入手机号码">
+            <input type="password" class="pass" placeholder="请输入密码">
+        </form>
+        <button class='btn' type="submit">登录</button>
+    </div>
+    <!-- <div class="con con-two">
+        <div>
+            <input type="text" class="phone" placeholder="请输入手机号码">
+            <span class='v-code'>发送验证码</span>
+        </div>
+        <input type="password" class="pass" placeholder="请输入短信中的验证码">
+        <input type="submit" value="验证并登录">
+    </div> -->
+
+    <!-- 底部  注册 忘记密码 -->
+    <div class="foot">
+        <a href="#">立即注册</a>
+        <a href="#">忘记密码</a>
+    </div>
+
+    <!-- 验证信息判断弹窗 -->
+    <div class="masking">
+        <div class="box">
+            <div class="alert">
+                <span></span>
+                <a href="#">确认</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 验证码短信弹出 -->
+    <div class="ma_code">
+        <div class="note_top">
+            <img src="./image/my/note.png" alt="">
+            <span>短信</span>
+            <span>刚刚</span>
+        </div>
+        <p class="note_con"></p>
+        <div class="note_foot">
+            <span>回复</span>
+            <span>标记已读</span>
+            <span>复制验证码</span>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script src="./js/setRem.js"></script>
+<script src="./js/login.js"></script>
+<script src="./js/public.js"></script>
+<script src="./js/touch.min.js"></script>
+<script>
+    // 切换登录方式
+    var btn_common = document.getElementsByClassName('btn-common')[0]
+    var btn_sortcut = document.getElementsByClassName('btn-sortcut')[0]
+    var con = document.getElementsByClassName('con')[0]
+    var str = ''
+    var phone = document.getElementsByClassName('phone')[0]
+    var masking = document.getElementsByClassName('masking')[0]
+    var pass_code = document.getElementsByClassName('pass_code')[0]
+    var pass = document.getElementsByClassName('pass')[0]
+    // 普通登录验证
+    touch.on(btn_common, 'tap', function () {
+        mmfn()
+        btnlogin()
+        PassVar()
+    })
+
+    // 验证码登录验证
+    touch.on(btn_sortcut, 'tap', function () {
+        fn()
+        PassCode()
+    })
+
+    regular()
+    nim()
+    headjl()
+    btnlogin()
+    PassVar()
+</script>
